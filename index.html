@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Guess Game</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <nav>
+        <div class="container">
+            <div class="nav_container">
+                <div class="nav_left">
+                    <h2>Tries: <span id="life"></span></h2>
+                </div>
+                <div class="nav_right">
+                    
+                    <span id="user"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <main>
+        <div class="container">
+            <div class="game_section">
+                <h2>Guessing game</h2>
+                <p id="question"></p>
+                <input type="number" id="guessInput" placeholder="Secret number " />
+                <button id="guessBtn"><span>Submit</span></button>
+            </div>
+        </div>
+    </main>
+
+    <!-- User Section -->
+    <div class="user_section_container">
+        <div class="container">
+            <div class="user_section">
+                <input type="text" name="username" 
+                    id="username" placeholder="Username"
+                    autocomplete="off" 
+                />
+                <button id="userBtn"><span>Enter</span></button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Toast -->
+    <div class="toast"></div>
+
+    <!-- Game over alert -->
+    <div class="game_over">
+        <div class="flex_center_center">
+            <h2>Game Over, try again.</h2>
+            <button id="resetBtn">Try Again!</button>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
